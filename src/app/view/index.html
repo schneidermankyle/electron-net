@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--  Our primary template, nothing too special here, just some ugly HTML -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Net App</title>
+  </head>
+  <body>
+    <div class="container" ng-controller="AlgorithmCtrl as ctrl">
+      <h1>{{ctrl.title}}</h1>
+      <p stle="color: red" ng-show="ctrl.ErrorMessage">{{ctrl.ErrorMessage}}</p>
+      <table>
+        <thead>
+          <tr>
+            <th style="min-wdith: 80px;">Test Data</th>
+            <th style="min-width: 80px;">Test Data</th
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="set in ctrl.dataSet">
+            <td>{{set.FirstName}}</td>
+            <td>{{set.LastName}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript" src="../src/app.js"></script>
+</html>

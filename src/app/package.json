@@ -1,0 +1,18 @@
+{
+  "name": "electron-net",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "devDependencies": {
+    "electron": "^3.0.10"
+  },
+  "dependencies": {
+    "angular": "^1.7.5"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
